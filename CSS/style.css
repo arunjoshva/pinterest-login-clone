@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0; /* Remove top/bottom padding */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.login-container {
+  position: relative;
+  z-index: 10;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0; /* Add vertical padding here */
+}
+
+/* Form Card */
+.regform {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 400px;
+  background-color: #ffffff;
+  padding: 32px 24px;
+  border-radius: 20px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Headings */
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #333333;
+  text-align: center;
+  margin: 0 0 16px;
+}
+
+/* Input Fields */
+.textlabel {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.input {
+  margin-bottom: 16px;
+}
+
+.input input {
+  width: 100%;
+  font-size: 14px;
+  border: 2px solid #A5A5A5;
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-top: 4px;
+}
+
+/* Paragraph Styles */
+.p1 {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.p2, .p3, .p4 {
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto 10px;
+}
+
+.p2 {
+  color: rgb(118, 118, 118);
+  font-weight: 400;
+}
+
+.p3 {
+  font-weight: 600;
+  color: #171717;
+}
+
+.p4 {
+  font-weight: 400;
+  color: #171717;
+}
+
+/* Buttons */
+button,
+.b1, .b2, .b3, .loginbutton {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 8px 0;
+  transition: background-color 0.3s ease;
+}
+
+.loginbutton {
+  background-color: #e60023;
+  color: white;
+  border: none;
+}
+
+.loginbutton:hover {
+  background-color: #c4001f;
+}
+
+.b1 {
+  background-color: white;
+  border: 1px solid #ddd;
+  color: #333;
+}
+
+.b1:hover {
+  background-color: #e9e9e9;
+}
+
+.b2 {
+  background-color: #1877F2;
+  border: 1px solid #ddd;
+  color: white;
+}
+
+.b3 {
+  background-color: white;
+  border: 1px solid #ddd;
+  color: #333;
+}
+
+.b3:hover {
+  background-color: #f0f5fe;
+}
+
+/* Background Grid */
+.background-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 16px;
+  padding: 24px;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.background-grid::after {
+  content: '';
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  z-index: 1;
+}
+
+/* Background Cards */
+.background-grid .card {
+  width: 180px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.background-grid .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  opacity: 0.5;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .regform {
+    width: 90%;
+    padding: 24px 16px;
+  }
+
+  .background-grid .card {
+    width: 140px;
+    height: 200px;
+  }
+}
+
+button img.icon {
+  height: 18px;
+  width: 18px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.disclaimer {
+  font-size: 10px;
+  text-align: center;
+  color: #888;
+  margin: 0;
+  padding: 0;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
